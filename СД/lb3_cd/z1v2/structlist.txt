@@ -1,0 +1,9 @@
+typ
+er
+32
+ret
+tr
+45
+mir
+dd
+34
