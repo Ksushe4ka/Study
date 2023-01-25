@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<book>  
+	<par>
+        <parag>1</parag>
+        <page>Абрикосовый</page>
+			</par>
+			<par>
+	    <parag>3</parag>
+			<page>Амарантовый глубоко-пурпурный</page>
+	</par>
+	<par>
+		<parag>2</parag>
+        <page>Антрацитово-серый</page>
+	</par>
+</book>

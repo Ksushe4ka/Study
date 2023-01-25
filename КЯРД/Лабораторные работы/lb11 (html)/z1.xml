@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="zz1.css"?>
+<book>
+<heading>XML</heading>
+	<page>
+	<parag>Все XML элементы должны иметь закрывающий тег</parag>
+	<parag>Теги XML являются регистрозависимыми</parag>
+	</page>
+	<page>
+	<parag>Все элементы обязаны соблюдать корректную вложенность</parag>
+	<parag>Перед закрывающей угловой скобкой в пустых элементах XML
+требуется ставить косую черту</parag>
+	</page>
+	<end>конец</end>
+</book>

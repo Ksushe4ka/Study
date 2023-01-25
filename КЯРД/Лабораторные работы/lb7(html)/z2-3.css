@@ -1,0 +1,60 @@
+@keyframes opacy{
+    0% {
+        color: orange;
+        opacity: 0;
+    }
+    25% {
+        color: red;
+        opacity: 0.2;
+    }
+    50% {
+        color: blue;
+        opacity: 0.4;
+    }
+    75% {
+        color: orange;
+        opacity: 0.6;
+    }
+    100% {
+        color: purple;
+        opacity: 0.8;
+    }
+}
+h1{
+    text-align: center;
+    font-family: comic sans ms;
+    animation: opacy infinite 10s linear;
+    animation-direction:alternate;
+}
+div{
+    display: inline-block;
+    margin: 2%;
+    perspective: 700px;
+}
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 10%;
+}
+#img1{
+    transform: rotateX(35deg);
+}
+#img2{
+    transform: rotateY(30deg);
+}
+#img3{
+    transform: rotateX(35deg);
+}
+#img4{
+    transform: rotateY(-30deg);
+}
+p{
+    font-size: 18px;
+}
+.text{
+    width: 300px;
+    height: 300px;
+    margin-left: 600px;
+    animation: opacy infinite 20s linear;
+    animation-direction:alternate;
+}

@@ -1,0 +1,22 @@
+heading
+{ display:block;
+text-align:center;
+margin:10px 20px 10px 20px;
+margin-top:12pt;
+font-size:15pt}
+page
+{ font-style:italic;
+text-align:center}
+parag
+{ display:block;
+text-align:center;
+	font-weight:bold;}
+end
+{ display:block;
+text-align:center;
+}
+book
+{ display:block;
+margin:50px 100px;
+ border-style:solid;
+border-color:#8C0088}

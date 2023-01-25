@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Документ без названия</title>
+</head>
+
+<body>
+	<div>
+		<p><span id="name"></span></p>
+		<p><span id="family"></span></p>
+		<p><span id="inf"></span></p>
+	</div>
+
+	<script>
+		txt = "<student>";
+		txt += "<name>Ksenia</name>";
+		txt += "<family>Korelo</family>";
+		txt += "<inf>Hello</inf>";
+		txt += "</student>";
+
+		if (window.DOMParser) {
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(txt, "text/xml");
+		} else {
+			xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+			xmlDoc.async = false;
+			xmlDoc.loadXML(txt);
+		}
+
+		document.getElementById("name").innerHTML = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+
+		document.getElementById("family").innerHTML = xmlDoc.getElementsByTagName("family")[0].childNodes[0].nodeValue;
+
+		document.getElementById("inf").innerHTML = xmlDoc.getElementsByTagName("inf")[0].childNodes[0].nodeValue;
+
+
+	</script>
+
+</body>
+
+</html>

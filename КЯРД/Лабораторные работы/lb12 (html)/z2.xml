@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style2.xsl"?>
+<catalog>
+<cd>
+<name>liza</name>
+<mark>10</mark>
+</cd>
+<cd>
+    <name>lera</name>
+    <mark>7</mark>
+</cd>
+<cd>
+    <name>alex</name>
+    <mark>3</mark>
+</cd>
+<cd>
+    <name>sofia</name>
+    <mark>9</mark>
+</cd>
+</catalog>

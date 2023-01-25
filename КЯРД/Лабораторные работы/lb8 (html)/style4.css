@@ -1,0 +1,33 @@
+.nav {
+    list-style-type: none;
+}
+
+.nav li {
+    display: inline-block;
+    background: url(facultet.png);
+    background-repeat: no-repeat;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 22px;
+    padding: 25px;
+    margin: 10px;
+}
+
+div {
+    border: 1px solid black;
+    margin: -2px;
+}
+
+#li2:hover {
+    background: url(facultet.png) no-repeat 0 -30px;
+}
+
+#li3:hover {
+    background: url(facultet.png) no-repeat 0 -60px;
+}
+
+#li4:hover {
+    background: url(facultet.png) no-repeat 0 -91px;
+}

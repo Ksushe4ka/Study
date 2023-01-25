@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        @import url(styl.css) screen and (min-width: 800px);
+
+        .flex {
+            display: flex;
+            padding: 5px;
+            flex-flow: column wrap;
+            max-width: 100%;
+            /* макс ширина блока */
+            margin: 0 auto;
+            /* выравниваем блок по центру */
+        }
+
+        .flex2 {
+            display: flex;
+            flex-flow: row;
+            width: 100%;
+        }
+
+        .flex-itm,
+        .flex-itm56 {
+            background: #ffd20c;
+            font-size: 2.5rem;
+            color: rgb(7, 7, 6);
+            margin: 5px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        .flex-itm56 {
+            height: 300px;
+        }
+
+        div {
+            word-wrap: break-word;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @media(max-width:1280px) {
+            figuration {
+                color: rgb(7, 182, 94);
+            }
+        }
+
+        @media(max-width:768px) {
+            figuration {
+                color: rgb(212, 0, 255);
+            }
+        }
+
+        @media(max-width:580px) {
+            figuration {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="flex-itm">Flexbox-верстка</div>
+        <div class="flex2">
+            <div class="flex-itm"><a href="https://tpverstak.ru/flex-cheatsheet/">Ссылка 1</a></div>
+            <div class="flex-itm"><a href="https://wp-kama.ru/id_8045/flex-v-css.html#primery-flex-verstki">Ссылка 2</a>
+            </div>
+            <div class="flex-itm"><a href="https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox">Ссылка
+                    3</a></div>
+        </div>
+        <div class="flex2">
+            <div class="flex-itm56">
+                <figure><img src="1.jpg">
+                    <figuration>Милые котики</figuration>
+                </figure>
+            </div>
+            <div class="flex-itm56">
+                <figure><img src="2.jpeg">
+                    <figuration>Вторые милые котики</figuration>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+img{
+    width: 300px;
+}
+div{
+    position: absolute;
+}
+@keyframes opacy{
+    0% {
+        color: orange;
+        opacity: 0;
+    }
+    25% {
+        color: red;
+        opacity: 0.2;
+    }
+    50% {
+        color: blue;
+        opacity: 0.4;
+    }
+    75% {
+        color: orange;
+        opacity: 0.6;
+    }
+    100% {
+        color: purple;
+        opacity: 0.8;
+    }
+}
+h1{
+    text-align: center;
+    font-family: comic sans ms;
+    animation: opacy infinite 10s linear;
+    animation-direction:alternate;
+}
+@keyframes squar{
+    0%{
+        left:0%;
+        top:0%;
+    }
+    25% {
+        left: 80%;
+        top:0%;
+    }
+    50% {
+        left: 80%;
+        top:60%;
+    }
+    75% {
+        left: 0%;
+        top:60%;
+    }
+    100%{
+        left:0%;
+        top:0%;
+    }
+}
+@keyframes goriz{
+    0%{
+        left:0%;
+        top:0%;
+    }
+    50% {
+        left: 80%;
+        top:0%;
+    }
+    100%{
+        left:0%;
+        top:0%;
+    }
+}
+@keyframes upper{
+    0%{
+        left:0%;
+        top:0%;
+    }
+    50% {
+        left: 0%;
+        top:60%;
+    }
+    100%{
+        left:0%;
+        top:0%;
+    }
+}
+@keyframes lane{
+    0%{
+        left:0%;
+        top:0%;
+    }
+    10% {
+        left: 5%;
+        top:10%;
+    }
+    20% {
+        left: 8%;
+        top:13%;
+    }
+    30% {
+        left: 13%;
+        top:7%;
+    }
+    40% {
+        left: 18%;
+        top:24%;
+    }
+    50% {
+        left: 25%;
+        top:15%;
+    }
+    60% {
+        left: 40%;
+        top:30%;
+    }
+    70% {
+        left: 45%;
+        top:35%;
+    }
+    80% {
+        left: 50%;
+        top:40%;
+    }
+    90% {
+        left: 34%;
+        top:5%;
+    }
+    100%{
+        left:0%;
+        top:0%;
+    }
+}
+#d1{
+    animation: goriz 5s linear infinite;
+}
+#d2{
+    animation: upper 5s linear infinite;
+}
+#d3{
+    animation: lane 5s linear infinite;
+}
+#d4{
+    animation: squar 10s linear infinite;
+    width: 300px;
+    height: 300px;
+}

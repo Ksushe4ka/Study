@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE book [
+<!ELEMENT book (heading, page, parag, end)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT page (#PCDATA)>
+<!ELEMENT parag (#PCDATA)>
+<!ELEMENT end (#PCDATA)>
+]>
+<!ENTITY name “Hello, world!”>
+<book>
+<heading>XML</heading>
+<page>&name;</page>
+	<page>
+	<parag>Все XML элементы должны иметь закрывающий тег</parag>
+	<parag>Теги XML являются регистрозависимыми</parag>
+	</page>
+	<page>
+	<parag>Все элементы обязаны соблюдать корректную вложенность</parag>
+	<parag>Перед закрывающей угловой скобкой в пустых элементах XML
+требуется ставить косую черту</parag>
+	</page>
+	<end>конец</end>
+</book>
