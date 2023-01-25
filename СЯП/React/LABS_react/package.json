@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-calendar": "^3.7.0",
+    "react-phone-input-2": "^2.15.0"
+  }
+}
