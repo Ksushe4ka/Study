@@ -1,0 +1,15 @@
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.exe
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.deps.json
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.runtimeconfig.json
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.dll
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.pdb
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.AssemblyReference.cache
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.AssemblyInfo.cs
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.dll
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\refint\ConsoleApp1.dll
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.pdb
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.genruntimeconfig.cache
+D:\Университет\2 курс\Основы инф.безопасности\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ref\ConsoleApp1.dll
