@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ex.2</title>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function Clock() {
+            const [curDate, setCurDate] = useState(new Date());
+
+
+            useEffect(() => {
+                setInterval(() => {
+                    setCurDate(new Date());
+                }, 1000);
+            }, [])
+
+            return (
+                <div>
+                    <h1 className="times">Нью-йоркское время -{DateToTimeString12(curDate)}</h1>
+                    <h1>Минское время -{DateToTimeString24(curDate)}</h1>
+                </div>
+            )
+        }
+        function twoDigits(v) {
+            return (v < 10 ? "0" : "") + v;
+        }
+
+        function timeString12(hours, minutes, seconds) {
+            const h = hours = (hours >= 12) ? hours - 12 : hours;
+            return `${h}:${twoDigits(minutes)}:${twoDigits(seconds)}`;
+        }
+        function DateToTimeString12(t) {
+            return timeString12(t.getHours(), t.getMinutes(), t.getSeconds());
+        }
+        function timeString24(hours, minutes, seconds) {
+
+            return `${twoDigits(hours)}:${twoDigits(minutes)}:${twoDigits(seconds)}`;
+        }
+
+        function DateToTimeString24(t) {
+            return timeString24(t.getHours(), t.getMinutes(), t.getSeconds());
+        }
+
+        
+
+       
+        ReactDOM.render(
+            <div>
+                <Clock />
+
+            </div>,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>

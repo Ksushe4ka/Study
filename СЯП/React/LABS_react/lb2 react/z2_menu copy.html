@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ex.2</title>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        
+        class Jobmenu extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    title: props.title,
+                    data: props.data,
+                    pos: 0
+                };
+            }
+            render() {
+                return (
+                    <span>
+                        <h3 className="aaa">{this.state.title}</h3>
+                        {this.state.data.map((data, index) => { return <div key={index}> <MenuItem data={data} zkey={index} /> </div> }
+                        )}
+                    </span>
+                );
+            }
+
+        }
+
+        class MenuItem extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    data: props.data,
+                    pos: false,
+                    num: props.zkey
+                };
+
+
+            }
+
+            add_data(e, compon) {
+
+                let id = compon.state.data.name + "" + compon.state.num
+                let table = document.getElementById(id)
+                if (this.state.pos === false) {
+                    table.classList.add("shown")
+                } else {
+                    table.classList.remove("shown")
+                }
+                this.state.pos = !this.state.pos
+            }
+
+            render() {
+
+                return (
+                    <span>
+                        <div className="Detail_Info" >
+                            <span onClick={(e) => this.add_data(e, this)}>{this.state.data.name}{this.state.num}</span>
+                            <ul id={this.state.data.name + "" + this.state.num}>
+                                {this.state.data.links.map(link => { return <li><a href={link.url}>{link.name}</a></li> })}
+                            </ul>
+                        </div>
+                    </span>
+                );
+            }
+        }
+
+        function App() {
+  const items = [
+    {"name": "Freelance",
+    "links": [
+      {"url": "https://kwork.ru/", "name": "kwork"},
+      {"url": "https://www.fiverr.com/", "name": "fiverr"}
+    ],
+    "payment": "various",
+    "status": "offline",
+    "gender": "male",
+    },
+    {"name": "OfficePlankton",
+    "links": [
+      {"url": "https://kwork.ru/", "name": "kwork"},
+      {"url": "https://www.fiverr.com/", "name": "fiverr"}
+    ],
+    "payment": "various",
+    "status": "offline",
+    "gender": "male",
+    }
+  ]
+  return (
+    <div className="App">
+      <Clock offset="-1" format="24" />
+      <br/>
+      <Menu title="Заголовок" data={items} />
+    </div>
+  );
+}
+
+        ReactDOM.render(
+            <Jobmenu title="Заголовок" data={items}/>,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ex.3</title>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        let numbers = [8, 7, 6, 5, 4, 3, 2, 1];
+        let letters = ["a", "b", "c", "d", "e", "f", "g", "h"];
+        let chess = [];
+        let cell = false;
+
+        for (let i = 0; i < 8; i++) {
+            for (let j = 0; j < 8; j++) {
+                if (cell === true) {
+                    chess.push(<td className="orange"></td>)
+                    cell = false;
+                }
+                else {
+                    chess.push(<td className="white-orange"></td>)
+                    cell = true;
+                }
+            }
+            if (cell === true) {
+                cell = false;
+            }
+            else {
+                cell = true;
+            }
+        }
+
+        let newlet = letters.map((parameter) => {
+            return (<div className="newlet">{parameter}</div>)
+        })
+
+        let newnum = numbers.map((parameter) => {
+            return (<div className="newnum">{parameter}</div>)
+        })
+
+        ReactDOM.render(
+            <div className="chess">
+                <div>{newnum}</div>
+                <div>
+                    <div>{newlet}</div>
+                    <div>
+                        <table>
+                            <td>{chess}</td>
+                        </table>
+                    </div>
+                    <div>{newlet}</div>
+                </div>
+                <div>{newnum}</div>
+            </div>,
+            document.getElementById('root')
+        );
+    </script>
+
+</body>
+
+</html>

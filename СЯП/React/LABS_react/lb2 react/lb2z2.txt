@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ex.2</title>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const menu = [
+            {
+                job: "Doktor",
+                links: [ 
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "pediatr" },
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "xirurg" }]
+            },
+            {
+                job: "Programmer",
+                links: [
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "html" },
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "react" }]
+            },
+            {
+                job: "Teacher",
+                links: [
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "math" },
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "geografy" }]
+            },
+            {
+                job: "Cook",
+                links: [
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "cook" },
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "conditer" }]
+            },
+            {
+                job: "Creativity",
+                links: [
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "dance" },
+                    { value: "https://ru.reactjs.org/docs/lists-and-keys.html", name: "draw" }]
+            }
+        ]
+        class Jobmenu extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    visibility: false,
+                    data: props.data,
+                };
+                this.handleClick = this.handleClick.bind(this);
+            }
+
+            handleClick() {
+                this.setState(state => ({
+                    visibility: !state.visibility
+                }));
+            }
+
+            render() {
+                if (this.state.visibility) {
+                    return (
+                        <div>
+                            <button onClick={this.handleClick}>menu</button>
+                            {this.state.data.map((data, index) => { return <div key={index}>{data.job} <Link data={data} zkey={index} /> </div> }
+                            )}
+                        </div>)
+                }
+                else {
+                    return (
+                        <div>
+                            <button onClick={this.handleClick}>menu</button>
+                        </div>)
+                }
+            }
+        }
+
+        class Link extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    visibility: false,
+                    data: props.data,
+                    num: props.zkey
+                };
+                this.handleClick = this.handleClick.bind(this);
+            }
+
+            handleClick() {
+                this.setState(state => ({
+                    visibility: !state.visibility
+                }));
+            }
+
+            render() {
+                if (this.state.visibility) {
+                    return (
+                        <div>
+
+                            <ul id={this.state.data.name + "" + this.state.num}>
+                                <button onClick={this.handleClick}>
+                                    {this.state.data.links.map(link => { return <li><a href={link.value}>{link.name}</a></li> })}
+                                </button>
+                            </ul>
+                        </div>
+                    )
+                }
+                else {
+                    return (
+                        <div>
+                            <ul id={this.state.data.name + "" + this.state.num}>
+                                <button onClick={this.handleClick}>
+                                  <p>click me</p>
+                                </button>
+                            </ul>
+                        </div>
+                    )
+                }
+            }
+        }
+
+        class Link2 extends React.Component {
+            render() {
+                return (
+                    <div>
+                        {this.props.truf.links.map(link => {
+                            return <li><a href={items.value} key={index}>{items.name}</a></li>
+                        })}
+
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(
+            <div>
+                <Jobmenu data={menu} />
+            </div>,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>
