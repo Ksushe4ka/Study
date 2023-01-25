@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="form.css"/>
+    <meta charset="utf-8" />
+    <title>Форма</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h2 align=center>Регистрация постоянного клиента</h2>
+            <table>
+        <tr>
+           <td> <label> Фамилия:</label> </td>
+           <td> <input type="text"/></td>
+        </tr>
+        <tr>
+            <td><label>Имя:</label></td>
+            <td> <input type="text" /></td>
+        </tr>
+        <tr>
+            <td> <label>Отчество:</label></td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td><label>Ваш возраст:</label></td>
+            <td><input type="text" /></td>
+        </tr>
+        <tr>
+            <td> <label>Пол:</label></td>
+            <td> <input type="radio" name="pol"/> Мужской
+            <input type="radio" name="pol"/> Женский</td>
+        </tr>
+        <tr>
+            <td> <label>E-mail:</label></td>
+            <td> <input type="email" /></td>
+        </tr>
+        <tr>
+            <td> <label>Страна проживания:</label></td>
+            <td> <input type="text"/></td>
+        </tr>
+        <tr>
+            <td> <label>Откуда вы узнали о нас?</label></td>
+            <td> <select name="vers">
+                    <option selected>От друзей и знакомых</option>
+                    <option>Из интернета</option>
+                    <option>Другое</option>
+                  </select></td>
+        </tr>
+        <tr>
+            <td> <label> Дата заполнения</label></td>
+            <td> <input type="date"/></td>
+        </tr>
+        <td> </td>
+        <td> <input type="submit" name="submit" value="Регистрация">
+            <input type="submit" name="submit" value="Отмена"></td>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>

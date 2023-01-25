@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 1</title>
+</head>
+
+<body>
+
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1900" height="400">
+    <defs>
+      <linearGradient id="Gradient2">
+        <stop offset="0%" stop-color="green" />
+        <stop offset="100%" stop-color="orange" />
+      </linearGradient>
+      <radialGradient id="Gradient1">
+        <stop offset="0%" stop-color="green" />
+        <stop offset="100%" stop-color="blue" />
+      </radialGradient>
+      <path id="textpath" fill="none" stroke="#000000"
+        d="M50,50 c0,0,10.99,51.603,102.248,51.603c91.259,0,136.172,53.992,200,100 a100,20 0 1, 0 400,-50" />
+    </defs>
+
+    <use xlink:href="#textpath" />
+    <text fill="#d35e28" x="150" y="0" font-size="36">
+      <textPath xlink:href="#textpath">
+        Текст вдоль произвольной кривой
+      </textPath>
+    </text>
+  </svg>
+  <style type="text/css">
+    @keyframes marchingants {
+      to {
+        stroke-dashoffset: 19;
+      }
+    }
+
+    rect#strokedrect3 {
+      stroke: #dfa323;
+
+      stroke-width: 7;
+      stroke-dasharray: 10;
+      animation: marchingants 1s forwards infinite linear;
+    }
+
+    .pifagor {
+      stroke: rgb(6, 114, 24);
+      transition: stroke 4s linear;
+
+
+    }
+
+    .pifagor:hover {
+      stroke: rgb(238, 215, 7);
+    }
+  </style>
+
+
+
+
+  <svg id="svg1" version="1.1" xmlns="http://www.w3.org/2000/svg" width="1500" height="250" viewBox="0 0 1500 250">
+    <circle fill="url(#Gradient1)" cx="75" cy="75" r="50" />
+    <rect id="strokedrect3" fill="red" x="150" y="25" width="125" height="100" />
+    <ellipse fill="green" cx="375" cy="75" rx="75" ry="50">
+      <animate attributeName="fill" dur="12s" begin="svg1.click" values="green;orange;yellow;green" />
+    </ellipse>
+    <polyline class="pifagor" stroke-width="5" fill="url(#Gradient2)" points="475 125 525 25 575 125 475 125" />
+    <path fill="none" stroke="#4B0082" stroke-width="2.5" d="M 25,150 h 300 l -75,40 h 600" />
+  </svg>
+
+
+
+</body>
+
+</html>

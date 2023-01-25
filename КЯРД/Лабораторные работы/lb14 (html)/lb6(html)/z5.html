@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Карта</title>
+    <style>
+        body {
+            background-color: #6d695c;
+            background-image:
+                repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px),
+                repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px),
+                linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)),
+                linear-gradient(120deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
+            background-size: 70px 120px;
+        }
+
+        img {
+            width: 480px;
+            height: 640px;
+            margin-left: 35%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="books.jpg" alt="books" usemap="#books">
+
+    <map name="books">
+        <area shape="rect" coords="50,50,230,300 " alt="Пардус" href="pardus.html">
+        <area shape="rect" coords="250,55,450,300" alt="Живые" href="givie.html">
+        <area shape="rect" coords="45,330,230,575" alt="Часодеи" href="chasodei.html">
+        <area shape="rect" coords="250,330,450,575" alt="Лунастры" href="lunstri.html">
+    </map>
+</body>
+
+</html>
