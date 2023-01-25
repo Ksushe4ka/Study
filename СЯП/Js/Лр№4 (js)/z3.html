@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        let massiv = new Array(4);
+        massiv[0] = Math.pow(2, 3);
+        massiv[1] = Math.pow(4, 2);
+        massiv[2] = Math.sqrt(100);
+        massiv[3] = Math.sqrt(25);
+
+        //Вывод исходного массива
+        document.write("<br\>");
+        for (let i = 0; i < massiv.length; i++) {
+            document.write(massiv[i] + "<br\>");
+        }
+
+        //Удаление элемента с номером 3
+        delete massiv[3];
+
+        //Вывод полученного массива
+        document.write("<br\>");
+        for (let i = 0; i < massiv.length; i++) {
+            document.write(massiv[i] + "<br\>");
+        }
+
+        //Проверяем, имеется ли у массива 2-й элемент.
+        if (2 in massiv)
+            document.write("<br\> Элемента под номером 2 существует")
+        else
+            document.write("<br\> Элемент под номером 2 не существует")
+
+        //Проверяем, является ли созданный объект объектами Array, String, Object
+        if (massiv instanceof Array) document.write("<br\> Объект massiv класса Array")
+        else document.write("<br\> Объект massiv  не класса Array")
+
+        if (massiv instanceof String) document.write("<br\> Объект massiv класса String")
+        else document.write("<br\> Объект massiv  не класса String")
+
+        if (massiv instanceof Object) document.write("<br\> Объект massiv класса Object")
+        else document.write("<br\> Объект massiv не класса Object")
+
+        //Определение типа объекта
+        function retur() {
+            return 5;
+        }
+        document.write("<br\>"+ typeof retur);
+    </script>
+</head>
+
+</html>

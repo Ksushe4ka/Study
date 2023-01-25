@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function Gruppa(n, spec, kolich) {
+            //Свойства (номер, специальность, количество)
+            this.n = n;
+            this.spec = spec;
+            this.kolich = kolich;
+
+            //Метод (исключить из группы k студентов)
+            this.sub_stud = function sub_stud(k) {
+                this.kolich -= k;
+                document.write("Из группы №" + this.n + " исключили " + k + " студентов. <br\> ");
+            }
+
+            //Метод (добавить в группу k студентов)
+            this.add_stud = function add_stud(k) {
+                this.kolich += k;
+                document.write("В группу № " + this.n + " добавили " + k + " студентов. <br\> ");
+            }
+        }
+        {
+            //Создание экземпляров объекта  
+            gr1 = new Gruppa(1, " ИСиТ ", 30);
+            gr2 = new Gruppa(2, " ИСиТ ", 25);
+            gr3 = new Gruppa(3, " ИСиТ ", 31);
+            gr4 = new Gruppa(4, " ИСиТ ", 28);
+
+            //Вызов методов созданных объектов 
+            gr1.sub_stud(1);
+            gr2.add_stud(5);
+            gr3.sub_stud(2);
+            gr4.add_stud(3);
+            
+            Gruppa.prototype.kurs=this.kurs
+            gr1.kurs=1
+
+            document.write(gr1.n, " ", gr1.spec, " ", gr1.kolich, " ", gr1.kurs , "<br\>");
+            document.write(gr2.n, " ", gr2.spec, " ", gr2.kolich, "<br\>");
+            document.write(gr3.n, " ", gr3.spec, " ", gr3.kolich, "<br\>");
+            document.write(gr4.n, " ", gr4.spec, " ", gr4.kolich, "<br\>");
+        }
+    </script>
+</head>
+
+</html>

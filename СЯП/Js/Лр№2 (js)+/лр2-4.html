@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function tabl(){
+let x=new Number(4.5);
+let y=new Number(80);
+	document.write("<table border='1'>"); 
+			document.write("<td>"+'Число'+"</td>");
+			document.write("<td>"+'Метод'+"</td>");
+			document.write("<td>"+'Результат'+"</td>");
+			document.write("<td>"+'Описание метода'+"</td>");
+		document.write("</tr>");
+			document.write("<td>"+x+"</td>");
+			document.write("<td>"+'toExponential()'+"</td>");
+			document.write("<td>"+x.toExponential()+"</td>");
+			document.write("<td>"+'Представляет число в экспоненциальной форме'+"</td>");
+		document.write("</tr>");
+			document.write("<td>"+x+"</td>");
+			document.write("<td>"+'toFixed(1)'+"</td>");
+			document.write("<td>"+x.toFixed(1)+"</td>");
+			document.write("<td>"+'Представляет число с фиксированным кол-вом цифр после запятой'+"</td>");
+		document.write("</tr>");
+			document.write("<td>"+x+"</td>");
+			document.write("<td>"+'toPrecision(3)'+"</td>");
+			document.write("<td>"+x.toPrecision(3)+"</td>");
+			document.write("<td>"+'возвращает строку, представляющую объект Number с указанной точностью.'+"</td>");
+		document.write("</tr>");
+			document.write("<td>"+x+"</td>");
+			document.write("<td>"+'toString(2)'+"</td>");
+			document.write("<td>"+x.toString(2)+"</td>");
+			document.write("<td>"+'Строковое представление числа в 2-ричной системе счисления'+"</td>");
+		document.write("</tr>");
+			document.write("<td>"+y+"</td>");
+			document.write("<td>"+'toExponential()'+"</td>");
+			document.write("<td>"+y.toExponential()+"</td>");
+			document.write("<td>"+'Представляет число в экспоненциальной форме'+"</td>");
+		document.write("</tr>");
+			document.write("<td>"+y+"</td>");
+			document.write("<td>"+'toFixed(1)'+"</td>");
+			document.write("<td>"+y.toFixed(1)+"</td>");
+            document.write("<td>" +'Представляет число с фиксированным кол-вом цифр после запятой'+"</td>");
+		document.write("</tr>");
+			document.write("<td>"+y+"</td>");
+			document.write("<td>"+'toPrecision(3)'+"</td>");
+			document.write("<td>"+y.toPrecision(3)+"</td>");
+			document.write("<td>"+'возвращает строку, представляющую объект Number с указанной точностью.'+"</td>");
+		document.write("</tr>");
+			document.write("<td>"+y+"</td>");
+			document.write("<td>"+'toString(2)'+"</td>");
+			document.write("<td>"+y.toString(2)+"</td>");
+			document.write("<td>"+'Строковое представление числа в 2-ичной системе счисления'+"</td>");
+		document.write("</tr>");		
+	document.write("</table>"); }
+	</script>
+	</head>
+	<body>
+	<input type='button' value='таблица' onclick='tabl()' />
+	</body>
+</html>

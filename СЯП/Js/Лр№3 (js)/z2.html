@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script type="text/javascript">
+            let met = ["pow", "pop", "push", "shift"]
+            let all = [...met , "round", "floor", "sline", "sort",];
+            let mas = new Array, arr = new Array;
+            for (let i = 0; i < all.length; i++) {
+                if (all[i] == "pow") mas.push(all[i]);
+                if (all[i] == "pop") arr.push(all[i]);
+                if (all[i] == "push") arr.push(all[i]);
+                if (all[i] == "shift") arr.push(all[i]);
+                if (all[i] == "round") mas.push(all[i]);
+                if (all[i] == "floor") mas.push(all[i]);
+                if (all[i] == "sline") arr.push(all[i]);
+                if (all[i] == "sort") arr.push(all[i]);
+            }
+            arr.push("unshift");
+            mas.unshift("random");
+            document.write("Общий массив: "+ all + "<br/>");
+            document.write("Длина массива: " + all.length + "<br/>");
+            document.write("Методы объекта Math: "+ mas + "<br/>");
+            document.write("Длина массива:" + mas.length + "<br/>");
+            document.write("Методы объекта Array: "+ arr + "<br/>");
+            document.write("Длина массива:" + arr.length + "<br/>");
+    </script>
+</head>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Лабораторная 6 </title>
+    <style>
+        body {
+            background-color: #FFE4E1;
+        }
+
+        #input {
+            background: rgb(240, 227, 116);
+            border-radius: 20%;
+            height: 40px;
+            font-size: 80%;
+            width: 120px;
+        }
+
+        table {
+            font-size: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        function fun1() {
+            window1 = open();
+        }
+
+        function fun2() {
+            window1.close();
+        }
+
+        function fun3() {
+            window1.document.write("Это первое окно. Оно было создано с помощью метода open()");
+        }
+
+        function fun4() {
+            window2 = open();
+        }
+
+        function fun5() {
+            window2.close();
+        }
+
+        function fun6() {
+            window2.document.write("Это второе окно. Для его закрытия можно использовать метод close()");
+        }
+        document.write("<table border='1'>");
+        document.write("<th>" + "Cвойство" + "</th>");
+        document.write("<th>" + "Значение" + "</th>");
+        document.write("</tr>");
+
+        document.write("<td>" + "информация о браузере пользователя" + "</td>");
+        document.write("<td>" + navigator.userAgent + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "версия браузера" + "</td>");
+        document.write("<td>" + navigator.appVersion + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "название браузера" + "</td>");
+        document.write("<td>" + navigator.appName + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "кодовое название браузера" + "</td>");
+        document.write("<td>" + navigator.appCodeName + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "ОС, которую использует пользователь" + "</td>");
+        document.write("<td>" + navigator.platform + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "поддержка Java в браузере" + "</td>");
+        document.write("<td>" + navigator.javaEnabled() + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "ширина и высота экрана" + "</td>");
+        document.write("<td>" + screen.width + "на" + screen.height + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "Глубина цвета" + "</td>");
+        document.write("<td>" + screen.colorDepth + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "URL, которые были посещены в данном окне браузера" + "</td>");
+        document.write("<td>" + History.length + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "URL текущего документа" + "</td>");
+        document.write("<td>" + location.href + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "путь к загруженному документу" + "</td>");
+        document.write("<td>" + location.pathname + "</td>");
+        document.write("</tr>");
+
+        document.write("<td>" + "имя домена загруженного документа" + "</td>");
+        document.write("<td>" + location.host + "</td>");
+        document.write("</tr>");
+        document.write("</table>");
+    </script>
+    <input id="input" type="button" value="открыть окно1" onclick="fun1()">
+    <input id="input" type="button" value="текст в 1-ом окне" onclick="fun3()">
+    <input id="input" type="button" value="закрыть окно1" onclick="fun2()">
+    <input id="input" type="button" value="открыть окно2" onclick="fun4()">
+    <input id="input" type="button" value="текст во 2-ом окне" onclick="fun6()">
+    <input id="input" type="button" value="закрыть окно2" onclick="fun5()">
+</body>
+
+</html>

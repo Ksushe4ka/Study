@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Форма</title>
+    <script>
+        function fun1() {
+            let gr = document.getElementsByName('subject');
+            let a="",b="",c="",d="",f="";
+            if (gr[0].checked) a=('<li> ОИТ');
+            if (gr[1].checked) b=('<li> АЛОЦВМ');
+            if (gr[2].checked) c=('<li> ОАиП');
+            if (gr[3].checked) d=('<li> Физика');
+            if (gr[4].checked) f=('<li> Математика');
+
+            let faculty = document.forms["profile"].faculty.value;
+            let name = document.forms["profile"].lastName.value;
+            let spec = document.forms["profile"].spec.value;
+            let kurs = document.forms["profile"].kurs.value;
+            document.write( faculty +"<br/>" + "Студент " + name + " специальность "+ spec + " курс " + kurs + " должен сдавать следующие предметы: <ul> "+ a + b + c + d + f) ;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="profile">
+        <fieldset>
+            <textarea name="faculty" placeholder="Факультет"></textarea><br />
+            <br /><input type="text" placeholder="Имя" name="firstName"><br />
+            <input type="text" placeholder="Фамилия" name="lastName"><br />
+            <br />Специальность: <select name="spec">
+                <option selected>ИСиТ</option>
+                <option>ПОИТ</option>
+                <option>ПОИБМС</option>
+                <option>ДЭВИ</option>
+            </select><br />
+            Курс: <br />
+            <input type="radio" name="kurs" value="1">1
+            <input type="radio" name="kurs" value="2">2
+            <input type="radio" name="kurs" value="3">3
+            <input type="radio" name="kurs" value="4">4 <br />
+            Предметы: <br />
+            <input type="checkbox" name="subject" value="oit">ОИТ
+            <input type="checkbox" name="subject" value="ALOCVM">АЛОЦВМ
+            <input type="checkbox" name="subject" value="OAiP">ОАиП
+            <input type="checkbox" name="subject" value="fiz">Физика
+            <input type="checkbox" name="subject" value="mat">Математика <br />
+            <br /> <input type="submit" name="submit" value="submit">
+            <input type="reset" name="reset" value="reset"><br />
+            <br /> <input type="button" name="print" value="Напечатать" onclick="fun1()">
+        </fieldset>
+    </form>
+</body>
+
+</html>

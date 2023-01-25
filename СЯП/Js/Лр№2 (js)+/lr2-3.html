@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+function radius()
+{
+let a= new Number(3);
+let b= new Number(3);
+document.write("<table border=\"1\">");
+document.write("<th> Радиус </th> <th> Площадь круга </th> <th> Длина окружности </th>");
+do
+{
+document.write("<tr>");
+for(i=1;i<=3;i++)
+{
+if(i==1)document.write("<td>" + a.toFixed(1) + "</td>");
+else if(i==2)document.write("<td>"+a+ (a*a*Math.PI).toFixed() +"</td>");
+else if(i==3)document.write("<td>"+ (2*a*Math.PI).toFixed(1) +"</td>");
+}
+a+=0.3;
+}
+while(a<=b);
+}
+document.write("</tr>");
+</script>
+<input type="button" value="Таблица вычислений" onclick="radius()">
+</body>
+</html>

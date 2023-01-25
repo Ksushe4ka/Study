@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script type="text/javascript"> 
+            let fio = new String ("Корело Ксения Александровна");
+            document.write("Длина строки - " + fio.length + "<br />");
+            document.write("ФИО в верхнем регистре - " + fio.toUpperCase()+"<br />");
+            document.write("ФИО в нижнем регистре - " + fio.toLowerCase()+"<br />");
+            fio=fio.replace("Корело", "К.");
+	        fio=fio.replace("Ксения", "К.");
+	        fio=fio.replace("Александровна", "А.");
+            document.write("ФИО (сокращ.) - " + fio);
+    </script>
+</head>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function Student(im, fam, fiz, mat, inf) {
+            //Свойства (имя, фамилия, (оценка) физика, математика, информатика)
+            this.im = im;
+            this.fam = fam;
+            this.fiz = fiz;
+            this.mat = mat;
+            this.inf = inf;
+
+            //метод (Вывод имени и фамилии)
+            this.outImFam = function outImFam() {
+                document.write(this.im + " " + this.fam + "<br\>");
+            }
+
+            //метод (Вывод среднего балла)
+            this.sredBall = function sredBall() {
+                let srBall = (this.fiz + this.mat + this.inf) / 3;
+                document.write("Средний балл равен " + srBall.toFixed(2) + "<br\>");
+            }
+
+            //метод (Вывод всех данных о студенте)
+            this.all = function all() {
+                document.write(this.im + " " + this.fam + "<br\> Физика: " + this.fiz + " Математика: " + this.mat + " Информатика: " + this.inf + "<br\>");
+            }
+        }
+        {
+            //Создание экземпляров объекта  
+            st1 = new Student("Ксения ", "Корело ", 8, 8, 7);
+            st2 = new Student("Игорь ", "Филимонов ", 7, 8, 5);
+            st3 = new Student("Рината ", "Якимова ", 9, 4, 6);
+
+            //Вызов методов созданных объектов
+            st1.sredBall();
+            st1.all();
+            st2.all();
+            st3.all();
+        }
+    </script>
+</head>
+
+</html>

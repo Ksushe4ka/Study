@@ -1,0 +1,44 @@
+        .b1,.b2,.b3,.b4,.b5 {
+			color: red;
+		}
+		.b1 {
+            text-align: center;
+            background-color: lightgoldenrodyellow;
+            width: 20%;
+            font-size: 120%;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+        .b2 {
+            width: 20%;
+            text-align: center;
+            background-color: mistyrose;
+            font-style: italic;
+            font-size: 120%;
+            font-variant: small-caps;
+            font-family: Tahoma;
+        }
+        .b3 {
+            width: 20%;
+            text-align: center;
+            background-color: lightgreen;
+            font-size: 120%;
+            font-weight: bold;
+            font-family: Verdana;
+        }
+        .b4 {
+            width: 20%;
+            text-align: center;
+            background-color: lightskyblue;
+            font-size: 120%;
+            font-family: Arial;
+        }
+        .b5 {
+            width: 20%;
+            text-align: center;
+            background-color: mediumpurple;
+            font-size: 120%;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-family: Lucida Console;
+        }
+		
