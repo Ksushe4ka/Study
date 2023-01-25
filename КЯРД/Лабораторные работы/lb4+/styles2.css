@@ -1,0 +1,26 @@
+﻿td {
+    empty-cells: hide;
+}
+
+th {
+    background-color: darkblue;
+    border-collapse: collapse;
+    padding: 1px;
+    border: 1px solid black;
+    color: aliceblue;
+    text-align: center;
+}
+
+tr td {
+    border-collapse: collapse;
+    padding: 1px;
+    border: 1px solid black;
+    color: aliceblue;
+    text-align: center;
+}
+
+tr td:first-child {
+    color: #000000;
+    text-align: center;
+}
+

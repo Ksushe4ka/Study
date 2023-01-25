@@ -1,0 +1,9 @@
+﻿table {
+    border-collapse: collapse;
+}
+tr:first-child {
+    background-color: burlywood;
+}
+th {
+    background-color:darksalmon;
+}

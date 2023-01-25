@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Carveat';
+    src: url('Caveat.woff')
+}
+h1{
+    font-family: 'Carveat';
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #FC0 1px 0 10px;
+    text-transform: capitalize;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('Exo2.woff')
+}
+h2 {
+    font-family: 'Exo2';
+    text-align: left;
+    margin-top: 0.2rem;
+    text-indent: 25px;
+    margin-bottom: 1.2em;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Comfortaa.woff')
+}
+p {
+    font-family: 'Comfortaa';
+    text-indent: 25px;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 200%;
+}
+p::first-letter {
+    font-family: 'Comfortaa';
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    background: hsla(275, 100%, 10%, 1)
+    }
+ol li {
+    list-style-type: none;
+    counter-increment: item;
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 200%;
+}
+
+ol li:before {
+    content: counter(item, upper-roman) ".";
+    color: blue;
+}
+
+

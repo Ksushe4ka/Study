@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 { 
+    color: purple;
+    font-family: Monotype Corsiva;
+    text-align: center;
+}
+.q1 {
+    color: red;
+    font-size: 18pt;
+    font-family: Times New Roman;
+}
+.q2 {
+    color: yellow;
+    font-size: 20pt;
+    font-family: Times New Roman;
+}
+.q3 {
+    color: green;
+    font-size: 22pt;
+    font-family: Times New Roman;
+}
+.intro td {background: SandyBrown;}

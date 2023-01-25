@@ -1,0 +1,17 @@
+﻿table {
+    border-collapse: collapse;
+    border-color: red;
+    border-width: 7px;
+}
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: black;
+}
+tr:nth-child(even) td:nth-child(even) {
+    background-color: black;
+}
+tr td  {
+    padding: 15px;
+}
+td {
+    border: 0px ;
+}
